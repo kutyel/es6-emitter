@@ -2,14 +2,11 @@
   "name": "es6-emitter",
   "description": "Smallest event emitter for JavaScript with all the power of ES6 Maps!",
   "homepage": "https://documentup.com/kutyel/es6-emitter",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "index.js",
-  "bin": {
-    "es6-emitter": "bin/index.js"
-  },
   "author": {
-    "name": "Flavio Corpa",
     "email": "flaviocorpa@gmail.com",
+    "name": "Flavio Corpa",
     "url": "http://flaviocorpa.com"
   },
   "repository": {
@@ -19,7 +16,12 @@
   "bugs": {
     "url": "https://github.com/kutyel/es6-emitter/issues"
   },
-  "keywords": [],
+  "keywords": [
+    "es6",
+    "eventemitter",
+    "events",
+    "pubsub"
+  ],
   "dependencies": {},
   "devDependencies": {
     "coveralls": "latest",
@@ -31,17 +33,6 @@
   "engines": {
     "node": ">= 6"
   },
-  "jest": {
-    "testEnvironment": "node",
-    "coverageThreshold": {
-      "global": {
-        "branches": 100,
-        "functions": 100,
-        "lines": 100,
-        "statements": 100
-      }
-    }
-  },
   "scripts": {
     "clean": "rm -rf node_modules",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
@@ -49,8 +40,19 @@
     "prelint": "npm run pretty",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js src/**/*.js test/**/*.js bin/**/*.js",
-    "test:w": "jest --watch",
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "test:w": "jest --watch"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    },
+    "testEnvironment": "node"
+  }
 }
