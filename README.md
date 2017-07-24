@@ -2,7 +2,7 @@
 
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
-![Last version](https://img.shields.io/github/tag/kutyel/es6-emitter.svg?style=flat-square)
+[![Node version](https://img.shields.io/node/v/es6-emitter.svg?style=flat-square)](https://www.npmjs.org/package/es6-emitter)
 [![Build Status](https://img.shields.io/travis/kutyel/es6-emitter/master.svg?style=flat-square)](https://travis-ci.org/kutyel/es6-emitter)
 [![Coverage Status](https://img.shields.io/coveralls/kutyel/es6-emitter.svg?style=flat-square)](https://coveralls.io/github/kutyel/es6-emitter)
 [![Dependency status](https://img.shields.io/david/kutyel/es6-emitter.svg?style=flat-square)](https://david-dm.org/kutyel/es6-emitter)
