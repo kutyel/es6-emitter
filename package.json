@@ -26,21 +26,33 @@
   "devDependencies": {
     "coveralls": "latest",
     "git-dirty": "latest",
-    "nyc": "latest",
+    "jest": "^20.0.4",
     "prettier-standard": "latest",
     "standard": "latest"
   },
   "engines": {
     "node": ">= 6"
   },
+  "jest": {
+    "testEnvironment": "node",
+    "coverageThreshold": {
+      "global": {
+        "branches": 100,
+        "functions": 100,
+        "lines": 100,
+        "statements": 100
+      }
+    }
+  },
   "scripts": {
     "clean": "rm -rf node_modules",
-    "coveralls": "nyc report --reporter=text-lcov | coveralls",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "standard",
     "prelint": "npm run pretty",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js src/**/*.js test/**/*.js bin/**/*.js",
-    "test": "nyc mocha"
+    "test:w": "jest --watch",
+    "test": "jest --coverage"
   },
   "preferGlobal": true,
   "license": "MIT"

@@ -4,7 +4,7 @@
 const path = require('path')
 const pkg = require('../package.json')
 
-require('update-notifier')({pkg}).notify()
+require('update-notifier')({ pkg }).notify()
 
 const cli = require('meow')({
   pkg,
