@@ -1,5 +1,7 @@
 # es6-emitter
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kutyel/es6-emitter.svg)](https://greenkeeper.io/)
+
 [![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 [![Node version](https://img.shields.io/node/v/es6-emitter.svg?style=flat-square)](https://www.npmjs.org/package/es6-emitter)
