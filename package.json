@@ -9,6 +9,10 @@
     "name": "Flavio Corpa",
     "url": "http://flaviocorpa.com"
   },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/kutyel/es6-emitter.git"
