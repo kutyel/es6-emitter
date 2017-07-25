@@ -2,7 +2,7 @@
   "name": "es6-emitter",
   "description": "Smallest event emitter for JavaScript with all the power of ES6 Maps!",
   "homepage": "https://documentup.com/kutyel/es6-emitter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "author": {
     "email": "flaviocorpa@gmail.com",
