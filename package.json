@@ -58,5 +58,14 @@
       }
     },
     "testEnvironment": "node"
+  },
+  "standard": {
+    "globals": [
+      "describe",
+      "expect",
+      "jest",
+      "test",
+      "it"
+    ]
   }
 }
