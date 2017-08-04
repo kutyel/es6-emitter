@@ -44,8 +44,7 @@
     "prelint": "npm run pretty",
     "pretest": "npm run lint",
     "pretty": "prettier-standard index.js src/**/*.js test/**/*.js bin/**/*.js",
-    "test": "jest --coverage",
-    "test:w": "jest --watch"
+    "test": "jest --coverage"
   },
   "license": "MIT",
   "jest": {
