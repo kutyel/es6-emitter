@@ -94,7 +94,7 @@ const em = new Emitter();
 const eventObject = { name: 'click', debounce: 300 };
 const eventFunction = e => console.log(e);
 
-const sub1 = em.subscripbe(NaN, () => 'not a number');
+const sub1 = em.subscribe(NaN, () => 'not a number');
 const sub2 = em.subscribe(eventObject, () => 'called with an object!');
 const sub3 = em.subscribe(eventFunction, () => 'called with a function!');
 
