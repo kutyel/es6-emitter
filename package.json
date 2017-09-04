@@ -30,7 +30,7 @@
   "devDependencies": {
     "coveralls": "latest",
     "git-dirty": "latest",
-    "jest": "^20.0.4",
+    "jest": "^21.0.0",
     "prettier-standard": "latest",
     "standard": "latest"
   },
