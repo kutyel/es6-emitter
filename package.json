@@ -31,7 +31,8 @@
     "coveralls": "latest",
     "git-dirty": "latest",
     "jest": "^22.0.0",
-    "merge": ">=1.2.1",
+    "lodash": "latest",
+    "merge": "latest",
     "prettier-standard": "latest",
     "standard": "latest"
   },
