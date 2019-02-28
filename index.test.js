@@ -1,6 +1,4 @@
-'use strict'
-
-const Emitter = require('.')
+import Emitter from '.'
 
 describe('Emitter', () => {
   let sub

@@ -3,7 +3,10 @@
   "description": "Smallest event emitter for JavaScript with all the power of ES6 Maps!",
   "homepage": "https://documentup.com/kutyel/es6-emitter",
   "version": "1.0.1",
-  "main": "index.js",
+  "main": "dist/es6-emitter.js",
+  "umd:main": "dist/es6-emitter.umd.js",
+  "module": "dist/es6-emitter.mjs",
+  "source": "index.js",
   "author": {
     "email": "flaviocorpa@gmail.com",
     "name": "Flavio Corpa",
@@ -28,11 +31,13 @@
   ],
   "dependencies": {},
   "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
     "coveralls": "latest",
     "git-dirty": "latest",
     "jest": "^22.0.0",
     "lodash": "latest",
     "merge": "latest",
+    "microbundle": "^0.10.1",
     "prettier-standard": "latest",
     "standard": "latest"
   },
@@ -40,6 +45,8 @@
     "node": ">= 6"
   },
   "scripts": {
+    "build": "microbundle -o dist",
+    "dev": "microbundle watch",
     "clean": "rm -rf node_modules",
     "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "standard",

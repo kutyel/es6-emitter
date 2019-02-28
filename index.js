@@ -1,6 +1,4 @@
-'use strict'
-
-class Emitter {
+export default class Emitter {
   constructor (events = []) {
     this.events = new Map(events)
   }
@@ -14,5 +12,3 @@ class Emitter {
     return this.events.has(name) && this.events.get(name).map(fn => fn(...args))
   }
 }
-
-module.exports = Emitter
