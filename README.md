@@ -21,9 +21,9 @@ $ npm install es6-emitter --save
 ## Usage
 
 ```javascript
-const Emitter = require('es6-emitter');
+import Emitter from 'es6-emitter'
 
-const emitter = new Emitter();
+const em = new Emitter()
 ```
 
 ## API
@@ -33,9 +33,9 @@ const emitter = new Emitter();
 Allows you to add subscriptions to your emitter given a certain name, **multiple subscriptions** under the same name are allowed!
 
 ```js
-const sub1 = emitter.subscribe('myEvent', foo => console.log('a callback!'));
+const sub1 = em.subscribe('myEvent', foo => console.log('a callback!'));
 
-const sub2 = emitter.subscribe('myEvent', (bar, baz) => console.log('another callback!'));
+const sub2 = em.subscribe('myEvent', (bar, baz) => console.log('another callback!'));
 
 sub1(); // releases the first subscription
 ```
@@ -61,16 +61,16 @@ Side effect that you want to associate with the name of the event.
 Allows you to emit any subscription added to the emitter, with any number of arguments.
 
 ```js
-emitter.emit('myEvent', 1, '2', null, () => 4);
+em.emit('myEvent', 1, '2', null, () => 4);
 ```
 
 **Returns** an array with every return value for each subscription callback.
 
 ```js
-const s1 = emitter.subscribe('otherEvent', () => 1);
-const s2 = emitter.subscribe('otherEvent', () => 2);
-const s3 = emitter.subscribe('otherEvent', () => true);
-const result = emitter.emit('otherEvent'); // > [1, 2, true]
+const s1 = em.subscribe('otherEvent', () => 1);
+const s2 = em.subscribe('otherEvent', () => 2);
+const s3 = em.subscribe('otherEvent', () => true);
+const result = em.emit('otherEvent'); // > [1, 2, true]
 ```
 
 #### name
